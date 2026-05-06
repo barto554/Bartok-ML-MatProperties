@@ -1,6 +1,5 @@
-# Aletta Bartok 
-# -- Machine Learning Final Project Spring 2026 -- 
-**ML to Predict Material Properties with CGCNN [Xie et al. 2018]**
+# -- Aletta Bartok Machine Learning Final Project Spring 2026 -- 
+## ML to Predict Material Properties with CGCNN [Xie et al. 2018]
 
 Crystal Graph Convolutional Neural Networks (CGCNN) are used to predict material properties of periodically crystalline materials and to predict potentially stable materials for materials science and engineering applications. CGCNN allows for higher accuracy and speed, generalization, and scale compared to traditional methods of materials design, like Density Functional Theory (DFT). This repository includes the data used for the model training, validation, testing, and prediction of material properties for the final project for CHEM 2920: Machine Learning for Chemistry. All ```.cif``` files have been downloaded from the Materials Project Database. There are three unique folders:
 
@@ -21,6 +20,8 @@ Crystal Graph Convolutional Neural Networks (CGCNN) are used to predict material
 **predict_dir:** 5 molecules for predicting, used for each best model to test MAE, same across all datasets for consistent testing.
 
 - $KH$, $CaS$, $Ti_6O$, $CuO$, $Rb_2O$
+
+Within each folder, two files are included: ```id_prop.csv``` and ```atom_init.json```. The band gap values from the Materials Project Database are placed into a file named ```id_prop.csv```, which is the "answer key" for the model, which is the file the model checks after it predicts the value. Through this file, the model is able to learn, in this case, the band gap, based on the structure of the molecule. Another file, ```atom_init.json```, is also included in the file, which assigns a vector to each element, which is how the model essentially "knows" what a specific atom is before it even looks at the bonds.
 
 Using the CGCNN model from Xie et al. (2018), a model to predict band gaps is created, varying the following conditions:
     1. Number of convolutional layers (1-5)
