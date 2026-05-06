@@ -1,20 +1,24 @@
-# Aletta Bartok 
-# -- Machine Learning Project Spring 2026 -- 
-# ML to Predict Material Properties with CGCNN [Xie et al. 2018]
+# Aletta Bartok -- Machine Learning Project Spring 2026 -- ML to Predict Material Properties with CGCNN [Xie et al. 2018]
 
 Crystal Graph Convolutional Neural Networks (CGCNN) are used to predict material properties of periodically crystalline materials and to predict potentially stable materials for materials science and engineering applications. CGCNN allows for higher accuracy and speed, generalization, and scale compared to traditional methods of materials design, like Density Functional Theory (DFT). This repository includes the data used for the model training, validation, testing, and prediction of material properties for the final project for CHEM 2920: Machine Learning for Chemistry. All ```.cif``` files have been downloaded from the Materials Project Database. There are three unique folders:
 
 **root_dir_smallset:** All molecules provided by Xie et al. (2018) plus 5 new molecules.
-    * NaCl, KCl, ZnS, $BaTiO_3$, $TiO_2$, C (Graphite), CsCl, Ge, Si, C (Diamond)
-    * LiH, NaH, HBr, FeH, SnO
+
+- NaCl, KCl, ZnS, $BaTiO_3$, $TiO_2$, C (Graphite), CsCl, Ge, Si, C (Diamond)
+
+- LiH, NaH, HBr, FeH, SnO
 
 **root_dir_largeset:** All molecules (from Xie et al. (2018), the small dataset, plus 15 new molecules).
-    * NaCl, KCl, ZnS, $BaTiO_3$, $TiO_2$, C (Graphite), CsCl, Ge, Si, C (Diamond)
-    * LiH, NaH, HBr, FeH, SnO
-    * LiP, $CrF_6$, NaAs, $UCl_6$, $ZnAs_2$, $CuGe_2P_3$, FeO, $CoF_2$, $KN_3$, KSb, $VO_2$, $Zr_2Ni$, TiGa, $Co_3Ni$, Ag
+
+- NaCl, KCl, ZnS, $BaTiO_3$, $TiO_2$, C (Graphite), CsCl, Ge, Si, C (Diamond)
+
+- LiH, NaH, HBr, FeH, SnO
+
+- LiP, $CrF_6$, NaAs, $UCl_6$, $ZnAs_2$, $CuGe_2P_3$, FeO, $CoF_2$, $KN_3$, KSb, $VO_2$, $Zr_2Ni$, TiGa, $Co_3Ni$, Ag
 
 **predict_dir:** 5 molecules for predicting, same across all datasets for consistent testing.
-    * KH, CaS, $Ti_6O$, CuO, $Rb_2O$
+
+- KH, CaS, $Ti_6O$, CuO, $Rb_2O$
 
 Using the CGCNN model from Xie et al. (2018), a model to predict band gaps is created, varying the following conditions:
     1. Number of convolutional layers (1-5)
