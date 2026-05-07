@@ -1,7 +1,7 @@
 <h1 align="center"><strong>-- Aletta Bartok Machine Learning Final Project Spring 2026 --</strong></h1>
 <h2 align="center"><strong>ML to Predict Material Properties with CGCNN [Xie et al. 2018]</strong></h2>
 
-<p align="center">Crystal Graph Convolutional Neural Networks (CGCNN) are used to predict material properties of periodically crystalline materials and to predict potentially stable materials for materials science and engineering applications. CGCNN allows for higher accuracy and speed, generalization, and scale compared to traditional methods of materials design, like Density Functional Theory (DFT). This repository includes the data used for the model training, validation, testing, and prediction of material properties for the final project for CHEM 2920: Machine Learning for Chemistry. All .cif files have been downloaded from the Materials Project Database.</p>
+<p align="center">Crystal Graph Convolutional Neural Networks (CGCNN) are used to predict material properties of periodically crystalline materials and to predict potentially stable materials for materials science and engineering applications. CGCNN allows for higher accuracy and speed, generalization, and scale compared to traditional methods of materials design, like Density Functional Theory (DFT). This repository includes the data used for the model training, validation, testing, and prediction of material properties for the final project for CHEM 2920: Machine Learning for Chemistry. All `.cif` files have been downloaded from the Materials Project Database.</p>
 
 In this repository, there are three unique folders:
 
@@ -27,12 +27,12 @@ Within each folder, two files are included: `id_prop.csv` and `atom_init.json`. 
 
 Using the CGCNN model from Xie et al. (2018), a model to predict band gaps is created, varying the following conditions:
 
-1. Number of convolutional layers (1-5)
+**1.** Number of convolutional layers (1-5)
     
-2. Comparing the Xie et al. (2018) pre-trained band gap model (trained on over 46,000 materials from the Materials Project Database)
+**2.** Comparing the Xie et al. (2018) pre-trained band gap model (trained on over 46,000 materials from the Materials Project Database)
 
-3. Varying the train/validation/test split from 6/2/2 to 7/2/1
+**3.** Varying the train/validation/test split from 6/2/2 to 7/2/1
 
-4. Varying the batch size (2, 4, and 256 (original))
+**4.** Varying the batch size (2, 4, and the original 256)
 
-<p align="center">Through these, it is possible to gain a better understanding of how the CGCNN model works to predict these material properties, how varying these parameters affects the CGCNN model, and why this model is the best for materials science and design.</p>
+Through these, it is possible to gain a better understanding of how the CGCNN model works to predict these material properties, how varying these parameters affects the CGCNN model, and why this model is the best for materials science and design.
