@@ -1,7 +1,7 @@
-<h1 align="center"><strong>-- Aletta Bartok Machine Learning Final Project Spring 2026 --</strong></h1>
+<h1 align="center"><strong>- Aletta Bartok Machine Learning Final Project Spring 2026 -</strong></h1>
 <h2 align="center"><strong>ML to Predict Material Properties with CGCNN [Xie et al. 2018]</strong></h2>
 
-<p align="center">Crystal Graph Convolutional Neural Networks (CGCNN) are used to predict material properties of periodically crystalline materials and to predict potentially stable materials for materials science and engineering applications. CGCNN allows for higher accuracy and speed, generalization, and scale compared to traditional methods of materials design, like Density Functional Theory (DFT). This repository includes the data used for the model training, validation, testing, and prediction of material properties for the final project for CHEM 2920: Machine Learning for Chemistry. All `.cif` files have been downloaded from the Materials Project Database.</p>
+<p align="center">Crystal Graph Convolutional Neural Networks (CGCNN) are used to predict material properties of periodically crystalline materials and to predict potentially stable materials for materials science and engineering applications. CGCNN allows for higher accuracy and speed, generalization, and scale compared to traditional methods of materials design, like Density Functional Theory (DFT). This repository includes the data used for the model training, validation, testing, and prediction of material properties for the final project for CHEM 2920: Machine Learning for Chemistry. All the `.cif` files have been downloaded from the Materials Project Database.</p>
 
 In this repository, there are three unique folders:
 
