@@ -27,12 +27,12 @@ Within each folder, two files are included: `id_prop.csv` and `atom_init.json`. 
 
 Using the CGCNN model from Xie et al. (2018), a model to predict band gaps is created, varying the following conditions:
 
-**1.** Number of convolutional layers (1-5)
+    **1.** Number of convolutional layers (1-5)
     
-**2.** Comparing the Xie et al. (2018) pre-trained band gap model (trained on over 46,000 materials from the Materials Project Database)
+    **2.** Comparing the Xie et al. (2018) pre-trained band gap model (trained on over 46,000 materials from the Materials Project Database)
 
-**3.** Varying the train/validation/test split from 6/2/2 to 7/2/1
+    **3.** Varying the train/validation/test split from 6/2/2 to 7/2/1
 
-**4.** Varying the batch size (2, 4, and the original 256)
+    **4.** Varying the batch size (2, 4, and the original 256)
 
 Through these, it is possible to gain a better understanding of how the CGCNN model works to predict these material properties, how varying these parameters affects the CGCNN model, and why this model is the best for materials science and design.
