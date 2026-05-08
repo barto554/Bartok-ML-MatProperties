@@ -36,3 +36,5 @@ Using the CGCNN model from Xie et al. (2018), a model to predict band gaps is cr
 4. The batch size (3, 5, 15, 75, 175, and the original 256)
 
 Through these, it is possible to gain a better understanding of how the CGCNN model works to predict these material properties, how varying these parameters affects the CGCNN model, and why this model is the best for materials science and design.
+
+A Google Colab file `ML_Final_Project_BARTOK.ipynb` is included to run the same tests on the CGCNN model and model the results provided here.
